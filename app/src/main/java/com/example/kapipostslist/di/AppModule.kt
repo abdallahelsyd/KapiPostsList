@@ -20,7 +20,7 @@ import javax.inject.Singleton
 object AppModule {
     @Provides
     @Singleton
-    fun provideMovieAPI(): PostsAPI {
+    fun providePostAPI(): PostsAPI {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -29,7 +29,7 @@ object AppModule {
     }
     @Provides
     @Singleton
-    fun provideMovieRepository(api:PostsAPI): PostsRepository {
+    fun providePostRepository(api:PostsAPI): PostsRepository {
         return PostsRepositoryImp(api)
     }
 }

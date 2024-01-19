@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kapipostslist.common.Resource
 import com.example.kapipostslist.di.ContextProvider
+import com.example.kapipostslist.domain.models.PostItem
 import com.example.kapipostslist.domain.useCases.GetPostsUseCase
 import com.example.kapipostslist.presentaion.postsList.PostsListViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -30,6 +31,7 @@ class PostsViewModel @Inject constructor(
         getPosts()
     }
 
+    private var selectedItem:PostItem?=null
     private fun getPosts() {
         viewModelScope.launch(contextProvider.Main) {
             getPostsUseCase.invoke().onEach {
@@ -41,6 +43,9 @@ class PostsViewModel @Inject constructor(
                 }
             }.launchIn(viewModelScope)
         }
+    }
+    fun setSelectedItem(item: PostItem) {
+        selectedItem=item
     }
 
 

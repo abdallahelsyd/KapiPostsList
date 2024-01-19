@@ -23,8 +23,8 @@ class GetPostsUseCase @Inject constructor(
     operator fun invoke(): Flow<Resource<PostsResponse>> = flow {
         try {
             emit(Resource.Loading())
-            val movie = repository.getPosts()
-            emit(Resource.Success(movie))
+            val post = repository.getPosts()
+            emit(Resource.Success(post))
         } catch (e: HttpException) {
             emit(Resource.Error(e.localizedMessage ?: "An unexpected error occured "))
         } catch (e: IOException) {
