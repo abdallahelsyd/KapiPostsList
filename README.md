@@ -1,12 +1,13 @@
 # KapiPostsList
 
 An Android app that displays a list of posts  using this [Api](https://jsonplaceholder.typicode.com/posts) 
-![Screenshot_1705633879](https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/9b2326aa-14db-444c-80cf-c953d9fb03a8)
-![Screenshot_1705633866](https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/f42f961d-3fd4-4131-9179-59f995d805af)
+<img src="https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/9b2326aa-14db-444c-80cf-c953d9fb03a8" alt="alt text" width="200">
+<img src="https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/f42f961d-3fd4-4131-9179-59f995d805af)" alt="alt text" width="200">
+
 
 ## Description
 
-KapiPostsList is an app that uses the API to fetch and display a list of posts . The app is built with Kotlin, MVVM architecture, Hilt dependency injection, Jetpack Compose UI, and Retrofit networking library.
+KapiPostsList is an app that uses the API to fetch and display a list of posts. The app is built with Kotlin, MVVM architecture, Hilt dependency injection, Jetpack Compose UI, and Retrofit networking library.
 The app demonstrates how to use modern Android development tools and best practices to create a simple but functional app.
 
 The app has two screens: a list screen and a form screen. The list screen displays the posts from the selected layout. The user can scroll down to load more posts, or swipe down to refresh the list.
@@ -25,14 +26,14 @@ build the app then run it
 
 ## Configuration
 
-teh api is public so there is no need to key configraions 
+this API is public so there is no need for key configurations 
 
 
 ## Usage
 
-To use the app, simply launch it and the app will fetch and display the posts in scroll layout.
+To use the app, simply launch it and the app will fetch and display the posts in a scroll layout.
 You can scroll down to load more posts. You can also tap on a post to view its details, such as the title, and body.
-Also you can edit any of the posts 
+Also, you can edit any of the posts 
 
 ## Maintainers
 
