@@ -1,4 +1,4 @@
-package com.example.kapipostslist.ui.theme
+package com.example.kapipostslist.presentaion.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
