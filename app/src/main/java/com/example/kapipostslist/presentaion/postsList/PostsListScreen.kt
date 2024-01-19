@@ -12,14 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.paging.LoadState
-import androidx.paging.compose.LazyPagingItems
-import com.example.kapipostslist.domain.models.PostItem
 import com.example.kapipostslist.presentaion.PostsViewModel
 import com.example.kapipostslist.presentaion.Screen
 import com.example.kapipostslist.presentaion.postsList.components.PostItem
@@ -33,10 +28,10 @@ fun PostsListScreen(
     navController: NavController,
     viewModel: PostsViewModel,
 ){
-    val state=viewModel.state.value
+    val state=viewModel.postsState.value
     val listState = rememberLazyListState()
 
-    val postsItemList = viewModel.state.value.posts
+    val postsItemList = viewModel.postsState.value.posts
 
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(state = listState) {

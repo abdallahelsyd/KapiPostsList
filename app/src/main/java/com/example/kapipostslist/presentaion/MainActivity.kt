@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.kapipostslist.presentaion.postDetails.PostDetailScreen
 import com.example.kapipostslist.presentaion.postsList.PostsListScreen
 import com.example.kapipostslist.presentaion.ui.theme.KapiPostsListTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -40,6 +41,11 @@ class MainActivity : ComponentActivity() {
                             route = Screen.PostsListScreen.route
                         ) {
                             PostsListScreen(navController = navController, viewModel = viewModel)
+                        }
+                        composable(
+                            route = Screen.PostDetailScreen.route
+                        ) {
+                            PostDetailScreen(navController,viewModel)
                         }
                     }
                 }
