@@ -1,6 +1,8 @@
 # KapiPostsList
 
 An Android app that displays a list of posts  using this [Api](https://jsonplaceholder.typicode.com/posts) 
+![Screenshot_1705633879](https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/9b2326aa-14db-444c-80cf-c953d9fb03a8)
+![Screenshot_1705633866](https://github.com/abdallahelsyd/KapiPostsList/assets/7117580/f42f961d-3fd4-4131-9179-59f995d805af)
 
 ## Description
 
